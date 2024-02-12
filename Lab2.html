@@ -1,33 +1,80 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MaruqueeDemo</title>
-</head>
-<body>
+    <style>
+      #k {
+        border-collapse: collapse;
+        tr,
+        th {
+          border: 2px solid black;
+        }
+        #gk {
+          border-collapse: collapse;
+        }
+      }
+      form div {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+      }
+    </style>
+  </head>
+  <body>
     <div>
-    <marquee  direction="left">left</marquee>
-    <marquee  direction="right">right</marquee>
-    
-    <marquee behaviour="alternate" direction="left">alternate </marquee>
-</div>
-<table border="1px solid black">
-    <tr>
-        <th>
-            Name Of The Student
+      <marquee direction="left">left</marquee>
+      <marquee direction="right">right</marquee>
+
+      <marquee behaviour="alternate" direction="left">alternate </marquee>
+    </div>
+
+    <table id="k" border="5px solid black">
+      <tr style="background-color: rgb(229, 159, 159)" ;>
+        <th width="120px" style="background-color: yellow">
+          Date of Evolution
         </th>
-<th>
-    Name of the partner
-</th>
-    </tr>
-
-</table>
-
-
-
-
-
-          
-
-</body>
+        <th width="120px"></th>
+        <th width="120px" align="left" style="background-color: yellow">
+          status
+        </th>
+        <th width="120px"></th>
+      </tr>
+      <tr style="background-color: rgb(190, 137, 137)">
+        <td width="120px" style="background-color: rgba(78, 146, 194, 0.507)">
+          Remark
+        </td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+      <tr style="background-color: rgb(194, 101, 101)">
+        <td width="120px" style="background-color: rgb(84, 161, 158)">
+          Name of Evaluator
+        </td>
+        <td></td>
+        <td style="background-color: yellow">signature</td>
+        <td></td>
+      </tr>
+    </table>
+    <div>
+      <table id="gk" border="2px">
+        <tr>
+          <td>red</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>blue</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>green</td>
+          <td>red</td>
+        </tr>
+        <tr>
+          <td>orange</td>
+          <td>red</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
